@@ -21,13 +21,14 @@
 <body>
     <!-- ============= Header =============- -->
     <div class="click-div"></div>
-
+    <div class="click-div-only-for-filter"></div>
     <header class="feed">
         <div class="contain">
             <div class="main_header main-header-new">
                 <div>
-                    <a href="" class="toggle-menu mbl-show"><i class="fa-solid fa-bars"></i></a> <a
-                        href="index.html"><img src="images/new-logo.png" alt="img" width="104" height="39"
+                    <a href="" class="toggle-menu mbl-show">
+                        <img src="images/menu-bar.png" alt="img">
+                    </a> <a href="index.html"><img src="images/vlixa-logo.png" alt="img" width="104" height="39"
                             class="logo"></a>
                 </div>
                 <div class="search_box search_box_active">
@@ -164,18 +165,36 @@
                 </div>
                 <div class="log-in-div">
                     <!-- <div class="dark-mode-div">
-                        <input type="checkbox" class="checkbox" id="checkbox">
-                        <label for="checkbox" class="checkbox-label">
-                            <span class="ball2"><img src="images/moon-new.png" alt=""></span>
-                            <span class="ball3"><img src="images/sun2.png" alt=""></span>
-                        </label>
-                    </div> -->
-                    <a class="login_btn">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                       <span class="ball2"><img src="images/moon-new.png" alt=""></span>
+                       <span class="ball3"><img src="images/sun2.png" alt=""></span>
+                    </label>
+                 </div> -->
+                    <!-- <a class="signup_btn log-d">
+                        <span>Sign Up</span>
+                    </a>
+                    <a class="signup_btn log-d">
+                        <span>Sign Up</span>
+                    </a> -->
+                    <a class="login_btn log-d free-cams">
+                        <span>Free Cams</span>
+                    </a>
+                    <a class="login_btn log-d live-s">
+                        <span>Live Sex</span>
+                    </a>
+                    <a class="login_btn log-d">
+                        <!-- <img src="images/login-icon-new.png" alt="img"> -->
                         <span>Log in</span>
                     </a>
-                    <a class="after-login">
-                        <span class="after-login-span">S</span>
-                    </a>
+                    <div class="search-icon-new">
+                        <a href="search.html"><img src="images/search-icon-new.png" alt=""></a>
+                    </div>
+                    <div class="loggedin">
+                        <a class="after-login">
+                            <span class="after-login-span">S</span>
+                        </a>
+                    </div>
                     <div class="share-box-login">
                         <ul>
                             <li>
@@ -414,78 +433,106 @@
             <div class="cross">
                 <a href="" class="close-menu"><i class="fa-light fa-xmark"></i></a>
             </div>
+            <div class="login-nav-area">
+                <!-- <a class="signup_btn">
+                    <span>Sign Up</span>
+                </a> -->
+                <a class="login_btn">
+                    <span>Log in</span>
+                </a>
+            </div>
         </div>
         <nav class="nav">
             <ul>
                 <li>
                     <a href="index.html">
-                        <span class="home"></span>
+                        <div class="nav-icon">
+                            <img src="images/home-icon.png" alt="img" class="ico">
+                        </div>
                         Home
                     </a>
                 </li>
                 <li>
                     <a href="trending.html">
-                        <span class="trending"></span>
+                        <div class="nav-icon">
+                            <img src="images/trending-b.png" alt="img" class="ico">
+                        </div>
                         Trending
                     </a>
                 </li>
                 <li>
                     <a href="topmodel.html">
-                        <span class="top-model"></span>
+                        <div class="nav-icon">
+                            <img src="images/model-b.png" alt="img" class="ico">
+                        </div>
                         Top Models
                     </a>
                 </li>
-                <li class="popular-vid-li">
+                <li class="popular-vid-li only-fans-li">
                     <a href="popularvideos.html">
-                        <span class="popular-vid"></span>
+                        <div class="nav-icon">
+                            <img src="images/vid-b.png" alt="img" class="ico">
+                        </div>
                         Popular Videos
                     </a>
                 </li>
-                <li class="only-fans-li">
-                    <a href="onlyfans-videos.html">
-                        <span class="onlyfans"></span>
-                        OnlyFans Videos
-                    </a>
-                </li>
+                <!-- <li class="only-fans-li">
+                 <a href="onlyfans-videos.html">
+                    <span class="onlyfans"></span>
+                    OnlyFans Videos
+                 </a>
+              </li> -->
                 <li>
                     <a href="video.html">
-                        <span class="video"></span>
-                        Videos
+                        <div class="nav-icon">
+                            <img src="images/video-b.png" alt="img" class="ico">
+                        </div>
+                        HD Videos
                     </a>
                 </li>
                 <li>
                     <a href="models.html">
-                        <span class="top-model"></span>
+                        <div class="nav-icon">
+                            <img src="images/model-b.png" alt="img" class="ico">
+                        </div>
                         Models
                     </a>
                 </li>
-                <li class="popular-vid-li popular-vid-li2">
+                <li class="popular-vid-li only-fans-li">
                     <a href="categories.html">
-                        <span class="category-span"></span>
+                        <div class="nav-icon">
+                            <img src="images/cate-b.png" alt="img" class="ico">
+                        </div>
                         Categories
                     </a>
                 </li>
                 <li>
                     <a href="blog.html">
-                        <span class="blog-span"></span>
+                        <div class="nav-icon">
+                            <img src="images/blog-b.png" alt="img" class="ico">
+                        </div>
                         Blog
                     </a>
                 </li>
                 <li>
                     <a href="blog-model.html">
-                        <span class="top-model"></span>
+                        <div class="nav-icon">
+                            <img src="images/model-b.png" alt="img" class="ico">
+                        </div>
                         Models
                     </a>
                 </li>
-                <li class="popular-vid-li">
-                    <a href="blog-categories.html" class="active-page">
-                        <span class="category-span"></span>
+                <li class="popular-vid-li only-fans-li">
+                    <a href="blog-categories.html">
+                        <div class="nav-icon">
+                            <img src="images/cate-b.png" alt="img" class="ico">
+                        </div>
                         Categories
                     </a>
                 </li>
                 <li class="contact-li">
                     <a href="contact.html">
-                        <span class="contact-span"></span>
+                        <!-- <span class="contact-span"></span> -->
                         Contact / <span class="dmca"> DMCA</span>
                     </a>
                 </li>
@@ -507,7 +554,7 @@
             <ul class="custom_breadcrumb">
                 <li><a href="">Home</a></li>
                 <li><a href="">Blog</a></li>
-                <li><span>Ben Affleck and Jennifer Lopez / Blog Tag Page</span></li>
+                <li><span>Ben Affleck and Jennifer / Blog Tag Page</span></li>
             </ul>
             <div class="body-wrapper-main">
                 <div class="body_wrapper">
@@ -517,6 +564,19 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo necessitatibus, officiis sapiente
                     </p>
+                    <div class="dropdown-container dropdown-container2">
+                        <div class="dropdown-toggle click-dropdown2">
+                            <span>Latest</span>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li value="Latest"><a href="#">Latest</a></li>
+                                <li value="Popular"><a href="#">Popular</a></li>
+                                <li value="Recent"><a href="#">Recent</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -529,11 +589,27 @@
                     <div class="grid-6 mbl-grid-100">
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
-                                <img src="images/blog-1.png" alt="img" width="463" height="266">
+                                <img src="images/blog-1.png" alt="img">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
-                          </div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -543,10 +619,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-2.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
-                                href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -556,10 +648,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-3.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
-                          </div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -569,10 +677,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-4.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
-                                href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -582,10 +706,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-5.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
-                          </div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -595,10 +735,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-6.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
-                                href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -608,9 +764,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-7.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -620,10 +793,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-8.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
-                                href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -633,9 +822,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-9.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -645,9 +851,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-10.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -657,9 +880,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-11.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -669,9 +909,26 @@
                         <div class="blog_part">
                             <a href="blog_details.html" class="blog_img">
                                 <img src="images/blog-12.png" alt="img" width="463" height="266">
+                                <!-- <div class="star_views">
+                                <div class="star_dp"><i class="camera"><img src="images/camera.png" alt=""></i><span>12 images and Videos</span></div>
+                             </div> -->
                             </a>
                             <div class="blog_info">
-                                <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                <div class="blog_tag">
+                                    <ul>
+                                        <li>
+                                            <a href="">Lorem ipsum</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dolor</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                                 <h3><a href="blog_details.html">Ben Affleck and Jennifer Lopez: Timeline of the Bennifer
                                         Romance</a></h3>
                             </div>
@@ -680,11 +937,22 @@
 
                 </div>
                 <!-- ============= loader =============- -->
-                <div class="item loading-3">
+                <!-- <div class="item loading-3">
                     <div class="loader">Loading...</div>
                     <div class="loading-text">Loading</div>
+                </div> -->
+                <!-- ============= pagination =============- -->
+                <div class="pagination">
+                    <ul>
+                        <li><a href="">Back</a></li>
+                        <li><a href="" class="active">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">Next</a></li>
+                    </ul>
                 </div>
-                <!-- ============= loader =============- -->
             </div>
         </div>
     </section>

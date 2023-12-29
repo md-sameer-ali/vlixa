@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/customfontstyle.css">
     <!-- ============= Font Awsome =============- -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/darkmode.js"></script>
 </head>
@@ -29,12 +30,13 @@
         <div class="contain">
             <div class="main_header main-header-new">
                 <div>
-                    <a href="" class="toggle-menu mbl-show"><i class="fa-solid fa-bars"></i></a> <a
-                        href="index.html"><img src="images/new-logo.png" alt="img" width="104" height="39"
+                    <a href="" class="toggle-menu mbl-show">
+                        <img src="images/menu-bar.png" alt="img">
+                    </a> <a href="index.html"><img src="images/vlixa-logo.png" alt="img" width="104" height="39"
                             class="logo"></a>
                 </div>
                 <div class="search_box search_box_active">
-                    <form><input type="search" placeholder="models" class="textbar"></form>
+                    <form><input type="search" placeholder="Search" class="textbar"></form>
                     <div class="search_dropdown">
                         <ul>
                             <li>
@@ -167,18 +169,36 @@
                 </div>
                 <div class="log-in-div">
                     <!-- <div class="dark-mode-div">
-                        <input type="checkbox" class="checkbox" id="checkbox">
-                        <label for="checkbox" class="checkbox-label">
-                            <span class="ball2"><img src="images/moon-new.png" alt=""></span>
-                            <span class="ball3"><img src="images/sun2.png" alt=""></span>
-                        </label>
-                    </div> -->
-                    <a class="login_btn">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                       <span class="ball2"><img src="images/moon-new.png" alt=""></span>
+                       <span class="ball3"><img src="images/sun2.png" alt=""></span>
+                    </label>
+                 </div> -->
+                    <!-- <a class="signup_btn log-d">
+                        <span>Sign Up</span>
+                    </a>
+                    <a class="signup_btn log-d">
+                        <span>Sign Up</span>
+                    </a> -->
+                    <a class="login_btn log-d free-cams">
+                        <span>Free Cams</span>
+                    </a>
+                    <a class="login_btn log-d live-s">
+                        <span>Live Sex</span>
+                    </a>
+                    <a class="login_btn log-d">
+                        <!-- <img src="images/login-icon-new.png" alt="img"> -->
                         <span>Log in</span>
                     </a>
-                    <a class="after-login">
-                        <span class="after-login-span">S</span>
-                    </a>
+                    <div class="search-icon-new">
+                        <a href="search.html"><img src="images/search-icon-new.png" alt=""></a>
+                    </div>
+                    <div class="loggedin">
+                        <a class="after-login">
+                            <span class="after-login-span">S</span>
+                        </a>
+                    </div>
                     <div class="share-box-login">
                         <ul>
                             <li>
@@ -418,78 +438,106 @@
             <div class="cross">
                 <a href="" class="close-menu"><i class="fa-light fa-xmark"></i></a>
             </div>
+            <div class="login-nav-area">
+                <!-- <a class="signup_btn">
+                    <span>Sign Up</span>
+                </a> -->
+                <a class="login_btn">
+                    <span>Log in</span>
+                </a>
+            </div>
         </div>
         <nav class="nav">
             <ul>
                 <li>
                     <a href="index.html">
-                        <span class="home"></span>
+                        <div class="nav-icon">
+                            <img src="images/home-icon.png" alt="img" class="ico">
+                        </div>
                         Home
                     </a>
                 </li>
                 <li>
                     <a href="trending.html">
-                        <span class="trending"></span>
+                        <div class="nav-icon">
+                            <img src="images/trending-b.png" alt="img" class="ico">
+                        </div>
                         Trending
                     </a>
                 </li>
                 <li>
                     <a href="topmodel.html">
-                        <span class="top-model"></span>
+                        <div class="nav-icon">
+                            <img src="images/model-b.png" alt="img" class="ico">
+                        </div>
                         Top Models
                     </a>
                 </li>
-                <li class="popular-vid-li">
+                <li class="popular-vid-li only-fans-li">
                     <a href="popularvideos.html">
-                        <span class="popular-vid"></span>
+                        <div class="nav-icon">
+                            <img src="images/vid-b.png" alt="img" class="ico">
+                        </div>
                         Popular Videos
                     </a>
                 </li>
-                <li class="only-fans-li">
-                    <a href="onlyfans-videos.html">
-                        <span class="onlyfans"></span>
-                        OnlyFans Videos
-                    </a>
-                </li>
+                <!-- <li class="only-fans-li">
+                 <a href="onlyfans-videos.html">
+                    <span class="onlyfans"></span>
+                    OnlyFans Videos
+                 </a>
+              </li> -->
                 <li>
                     <a href="video.html">
-                        <span class="video"></span>
-                        Videos
+                        <div class="nav-icon">
+                            <img src="images/video-b.png" alt="img" class="ico">
+                        </div>
+                        HD Videos
                     </a>
                 </li>
                 <li>
                     <a href="models.html">
-                        <span class="top-model"></span>
+                        <div class="nav-icon">
+                            <img src="images/model-b.png" alt="img" class="ico">
+                        </div>
                         Models
                     </a>
                 </li>
-                <li class="popular-vid-li popular-vid-li2">
+                <li class="popular-vid-li only-fans-li">
                     <a href="categories.html">
-                        <span class="category-span"></span>
+                        <div class="nav-icon">
+                            <img src="images/cate-b.png" alt="img" class="ico">
+                        </div>
                         Categories
                     </a>
                 </li>
                 <li>
                     <a href="blog.html">
-                        <span class="blog-span"></span>
+                        <div class="nav-icon">
+                            <img src="images/blog-b.png" alt="img" class="ico">
+                        </div>
                         Blog
                     </a>
                 </li>
                 <li>
                     <a href="blog-model.html">
-                        <span class="top-model"></span>
+                        <div class="nav-icon">
+                            <img src="images/model-b.png" alt="img" class="ico">
+                        </div>
                         Models
                     </a>
                 </li>
-                <li class="popular-vid-li">
+                <li class="popular-vid-li only-fans-li">
                     <a href="blog-categories.html">
-                        <span class="category-span"></span>
+                        <div class="nav-icon">
+                            <img src="images/cate-b.png" alt="img" class="ico">
+                        </div>
                         Categories
                     </a>
                 </li>
                 <li class="contact-li">
                     <a href="contact.html">
-                        <span class="contact-span"></span>
+                        <!-- <span class="contact-span"></span> -->
                         Contact / <span class="dmca"> DMCA</span>
                     </a>
                 </li>
@@ -511,7 +559,6 @@
     <section class="body divide_body photo-page-body photo-page-new single-video-page">
         <div class="container contain-photos-page">
             <div class="body_wrapper">
-
                 <div class="custom-row align-items-center c-profile-header">
                     <div class="grid-6">
                         <div class="profile_small">
@@ -522,35 +569,30 @@
                                 </a>
                             </div>
                             <div class="pro_model">
-                                <span>
-                                    <a href="profile.html" class="sophia sophia2 ">Sophia Neuro </a>
-                                </span>
+                                <a href="profile.html" class="sophia">Sophia Neuro </a>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-6">
-                        <div class="c-likes-views">
-                            <a href="" class="change_icon"><i class="fa-light fa-eye"></i>
-                                <!-- <i class="fa-solid fa-eye on-icon"></i> -->
-                                89k Views
-                            </a>
-                        </div>
+                    <div class="promotion">
+                        <h3>vlixa offer: <a href="">stripchat - free live cam sex</a></h3>
                     </div>
                 </div>
 
                 <div class="video-list-details-video">
-                    <a href="#popup1" class="port_img">
-                        <!--===== openpopup ===-->
-                        <!-- <video src="videos/mov_bbb.mp4" id="first-video" width="525" height="296"
+                    <!--===== openpopup ===-->
+                    <!-- <video src="videos/mov_bbb.mp4" id="first-video" width="525" height="296"
                             class="v-details-first-video" onclick="playpause()"></video>
                         <div class="playvideo v-details-big-video" id="video-icon" onclick="playpause()"><img
                                 src="images/playicon-3.png" alt="img" width="47" height="47"></div> -->
 
-                        <video id="first-video" class="video-js" controls preload="auto" poster="images/blogimg2.jpg"
+                    <!-- <video id="first-video" class="video-js" controls preload="auto" poster="images/blogimg2.jpg"
                             data-setup="{}">
                             <source src="videos/mov_bbb.mp4" type="video/mp4" />
-                        </video>
-                    </a>
+                        </video> -->
+                    <video id="video-id">
+                        <source src="https://cdn.vlixa.com/media/posts/g/i/givingyougrace/1000/givingyougrace_0003.mp4"
+                            type="video/mp4" />
+                    </video>
                 </div>
                 <div class="custom-row align-items-center">
                     <div class="grid-6 button-full">
@@ -561,60 +603,78 @@
                     </div>
                 </div>
                 <div class="like_comment_view">
-                    <div><a href="" class="change_icon"><i class="fa-light fa-heart"></i> <i
-                                class="fa-solid fa-heart on-icon"></i>53.2k Likes</a></div>
-                    <div><a href="" class="change_icon open_comments"><i class="fa-light fa-message"></i> <i
-                                class="fa-solid fa-message on-icon"></i>48k Comments</a></div>
-                    <div class="share-btn-area">
+                    <div>
                         <a href="" class="change_icon">
-                            <i class="fa-light fa-share"></i>
-                            1.5k Share
-                        </a>
-                        <div class="share-box">
-                            <div class="comment-arrow">
-                                <img src="images/comment-arrow.png" alt="">
+                            <div class="heart-area">
+                                <i class="fa-light fa-heart"></i>
+                                <i class="fa-solid fa-heart on-icon"></i>
                             </div>
-                            <ul>
-                                <li>
-                                    <button class="copy-btn copy-btn2">
-                                        <span></span>
-                                        <p>
-                                            Copy Link
-                                        </p>
-                                    </button>
-                                </li>
-                                <li>
-                                    <a href="https://wa.me/918961684026">
-                                        <i class="fa-brands fa-whatsapp"></i>
-                                        Send On Whatsapp
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-regular fa-paper-plane"></i>
-                                        Share On Telegram
-                                    </a>
-                                </li>
-                            </ul>
+                            58k Likes
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="change_icon open_comments">
+                            <div class="comment-area">
+                                <i class="fa-light fa-message"></i>
+                                <i class="fa-solid fa-message on-icon"></i>
+                            </div>
+                            48k Comments
+                        </a>
+                    </div>
+                    <div class="two-icons">
+                        <div class="share-btn-area">
+                            <a href="" class="change_icon">
+                                <div class="share-icon-area">
+                                    <!-- <i class="fa-light fa-share"></i> -->
+                                    <img src="images/share-new-icon.png" alt="img">
+                                    <span class="hover-text">Share</span>
+                                </div>
+                            </a>
+                            <div class="share-box">
+                                <div class="comment-arrow">
+                                    <img src="images/comment-arrow.png" alt="" class="arrow-img">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <button class="copy-btn copy-btn2">
+                                            <span></span>
+                                            <p>
+                                                Copy Link
+                                            </p>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="https://wa.me/91">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                            Send On Whatsapp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                            Share On Telegram
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="like-count-main">
+                            <div class="mark">
+                                <img src="images/bookmark-b.png" alt="img" class="b-unactive">
+                                <img src="images/fill-book-mark.png" alt="img" class="b-active">
+                                <span class="hover-text">Bookmark</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--=============- Do Like comments and Share =============--->
-                <!--=============- Write comments =============--->
-                <div class="comment_form comment-form-new">
-                    <form>
-                        <input type="text" placeholder="Type a message here ...">
-                        <button type="submit" class="btn-light">Post</button>
-                    </form>
-                </div>
-                <!--=============- Write comments =============--->
                 <div class="comment_sec">
                     <!--============ Show One comment =============-->
                     <div class="view_comments">
                         <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                        <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
+                        <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor
+                        </div>
                         <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                                    class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a>
+                                    class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago
                         </div>
                     </div>
                     <!--=============- Show One comment =============--->
@@ -625,119 +685,48 @@
                     <div class="total_comment_show">
                         <div class="view_comments">
                             <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                            <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
+                            <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor
+                            </div>
                             <div class="pro_like"><a href="#" class="inner_change_icon"><i
                                         class="fa-light fa-heart"></i> <i class="fa-solid fa-heart on-icon"></i></a>1
-                                Like. 2 days ago . <a href="">Reply</a></div>
+                                Like. 2 days ago
+                            </div>
                         </div>
                         <div class="view_comments">
                             <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                            <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
+                            <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor
+                            </div>
                             <div class="pro_like"><a href="#" class="inner_change_icon"><i
                                         class="fa-light fa-heart"></i> <i class="fa-solid fa-heart on-icon"></i></a>1
-                                Like. 2 days ago . <a href="">Reply</a></div>
+                                Like. 2 days ago
+                            </div>
                         </div>
                         <div class="view_comments">
                             <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                            <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
+                            <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor
+                            </div>
                             <div class="pro_like"><a href="#" class="inner_change_icon"><i
                                         class="fa-light fa-heart"></i> <i class="fa-solid fa-heart on-icon"></i></a>1
-                                Like. 2 days ago . <a href="">Reply</a></div>
+                                Like. 2 days ago
+                            </div>
+                        </div>
+                        <div class="total_comment">
+                            <a href="" class="total_comment_click total_comment_click2">View less
+                                comments</a>
                         </div>
                     </div>
                     <!--=============- View 20 comments =============--->
 
                 </div>
-                <!-- ============= Modal Show =============- -->
-                <div class="custom_modal" id="popup1">
-                    <div class="modal_content">
-                        <div class="modal_head">
-                            <div class="modal_like">
-                                <a href=""><i class="fa-solid fa-heart"></i>53.2k <span>Likes</span></a><a href=""><i
-                                        class="fa-solid fa-eye"></i>89k <span>Views</span></a>
-                            </div>
-                            <div><a href="" class="close_modal"><span>close</span><i class="fa-light fa-xmark"></i></a>
-                            </div>
-                        </div>
-                        <div class="modal_body">
-                            <div><img src="images/googleads.jpg" alt="img" width="728" height="90" class="g_img"></div>
-                            <div class="pop_profile">
-                                <div><img src="images/profileimg13.png" alt="img" width="30" height="30"> </div>
-                                <div>Sophia Neuro</div>
-                            </div>
-                            <!--=============- Popup Slider =============--->
-                            <div class="popup_slider">
-                                <!--=============- Slider1 =============--->
-                                <div class="pop_slide_item">
-                                    <div class="port_img">
-                                        <img src="images/img56.jpg" alt="img" width="724" height="557">
-                                    </div>
-                                </div>
-                                <!--=============- Slider1 =============--->
-                                <!--=============- Slider2 =============--->
-                                <div class="pop_slide_item">
-                                    <div class="port_img">
-                                        <img src="images/img56.jpg" alt="img" width="724" height="557">
-                                    </div>
-                                </div>
-                                <!--=============- Slider2 =============--->
-                            </div>
-                            <!--=============- Popup Slider =============--->
-                            <!--=============- Do Like comments and Share =============--->
-                            <div class="like_comment_view">
-                                <div><a href="" class="change_icon open_comments_modal"><i
-                                            class="fa-light fa-message"></i> <i
-                                            class="fa-solid fa-message on-icon"></i>48k Comments</a></div>
-                                <div><a href="" class="change_icon"><i class="fa-light fa-share"></i>5 Share</a>
-                                </div>
-                            </div>
-                            <!--=============- Do Like comments and Share =============--->
-                            <div class="comment_sec_modal">
-                                <!--============ Show comments =============-->
-                                <div class="view_comments">
-                                    <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                                    <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor
-                                    </div>
-                                    <div class="pro_like"><a href="#" class="inner_change_icon"><i
-                                                class="fa-light fa-heart"></i> <i
-                                                class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago .
-                                        <a href="">Reply</a>
-                                    </div>
-                                </div>
-                                <div class="view_comments">
-                                    <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                                    <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor
-                                    </div>
-                                    <div class="pro_like"><a href="#" class="inner_change_icon"><i
-                                                class="fa-light fa-heart"></i> <i
-                                                class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago .
-                                        <a href="">Reply</a>
-                                    </div>
-                                </div>
-                                <div class="view_comments">
-                                    <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                                    <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor
-                                    </div>
-                                    <div class="pro_like"><a href="#" class="inner_change_icon"><i
-                                                class="fa-light fa-heart"></i> <i
-                                                class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago .
-                                        <a href="">Reply</a>
-                                    </div>
-                                </div>
-                                <!--=============- Show comments =============--->
-                            </div>
-                            <!--=============- Write comments =============--->
-                            <div class="comment_form">
-                                <form>
-                                    <input type="text" placeholder="Type a message here ...">
-                                    <button type="submit" class="btn-light">Post</button>
-                                </form>
-                            </div>
-                            <!--=============- Write comments =============--->
-                        </div>
-                    </div>
+                <!--=============- Write comments =============--->
+                <div class="comment_form comment-form-new">
+                    <form>
+                        <input type="text" placeholder="Please Login or Register to Post Comments">
+                        <button type="submit" class="btn-light">
+                            <img src="images/comment-post-icon.png" alt="img">
+                        </button>
+                    </form>
                 </div>
-
             </div>
         </div>
     </section>
@@ -746,11 +735,40 @@
 
     <!-- ============= Jquery Library =============- -->
     <!-- ============= Body =============- -->
-    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
-    <script src="https://cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
     <!-- ============= Custom jquery =============- -->
     <script src="js/edit-js.js"></script>
     <script src="js/slick.js"></script>
+    <script>
+        var myFP = fluidPlayer(
+            'video-id', {
+            "layoutControls": {
+                "controlBar": {
+                    "autoHideTimeout": 3,
+                    "animated": true,
+                    "autoHide": true
+                },
+                "htmlOnPauseBlock": {
+                    "html": null,
+                    "height": null,
+                    "width": null
+                },
+                "autoPlay": false,
+                "mute": true,
+                "allowTheatre": false,
+                "playPauseAnimation": true,
+                "playbackRateEnabled": false,
+                "allowDownload": false,
+                "playButtonShowing": true,
+                "fillToContainer": false,
+                "posterImage": ""
+            },
+            "vastOptions": {
+                "adList": [],
+                "adCTAText": false,
+                "adCTATextPosition": ""
+            }
+        });
+    </script>
 </body>
 
 </html>

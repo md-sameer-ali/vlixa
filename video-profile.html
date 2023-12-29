@@ -14,20 +14,24 @@
    <link rel="stylesheet" href="css/customfontstyle.css">
    <!-- ============= Font Awsome =============- -->
    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+   <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
    <script src="js/jquery.min.js"></script>
    <script src="js/darkmode.js"></script>
 </head>
 
 <body>
-   <!-- ============= Header =============- -->
+
    <div class="click-div"></div>
-   <!-- ============= Header =============- -->
+   <div class="click-div-only-for-filter"></div>
+
    <header class="feed">
       <div class="contain">
          <div class="main_header main-header-new">
             <div>
-               <a href="" class="toggle-menu mbl-show"><i class="fa-solid fa-bars"></i></a> <a href="index.html"><img
-                     src="images/new-logo.png" alt="img" width="104" height="39" class="logo"></a>
+               <a href="" class="toggle-menu mbl-show">
+                  <img src="images/menu-bar.png" alt="img">
+               </a> <a href="index.html"><img src="images/vlixa-logo.png" alt="img" width="104" height="39"
+                     class="logo"></a>
             </div>
             <div class="search_box search_box_active">
                <form><input type="search" placeholder="Search" class="textbar"></form>
@@ -169,12 +173,30 @@
                      <span class="ball3"><img src="images/sun2.png" alt=""></span>
                   </label>
                </div> -->
-               <a class="login_btn">
+               <!-- <a class="signup_btn log-d">
+                      <span>Sign Up</span>
+                  </a>
+                  <a class="signup_btn log-d">
+                      <span>Sign Up</span>
+                  </a> -->
+               <a class="login_btn log-d free-cams">
+                  <span>Free Cams</span>
+               </a>
+               <a class="login_btn log-d live-s">
+                  <span>Live Sex</span>
+               </a>
+               <a class="login_btn log-d">
+                  <!-- <img src="images/login-icon-new.png" alt="img"> -->
                   <span>Log in</span>
                </a>
-               <a class="after-login">
-                  <span class="after-login-span">S</span>
-               </a>
+               <div class="search-icon-new">
+                  <a href="search.html"><img src="images/search-icon-new.png" alt=""></a>
+               </div>
+               <div class="loggedin">
+                  <a class="after-login">
+                     <span class="after-login-span">S</span>
+                  </a>
+               </div>
                <div class="share-box-login">
                   <ul>
                      <li>
@@ -410,78 +432,106 @@
          <div class="cross">
             <a href="" class="close-menu"><i class="fa-light fa-xmark"></i></a>
          </div>
+         <div class="login-nav-area">
+                <!-- <a class="signup_btn">
+                    <span>Sign Up</span>
+                </a> -->
+                <a class="login_btn">
+                    <span>Log in</span>
+                </a>
+            </div>
       </div>
       <nav class="nav">
          <ul>
             <li>
                <a href="index.html">
-                  <span class="home"></span>
+                  <div class="nav-icon">
+                     <img src="images/home-icon.png" alt="img" class="ico">
+                  </div>
                   Home
                </a>
             </li>
             <li>
                <a href="trending.html">
-                  <span class="trending"></span>
+                  <div class="nav-icon">
+                     <img src="images/trending-b.png" alt="img" class="ico">
+                  </div>
                   Trending
                </a>
             </li>
             <li>
                <a href="topmodel.html">
-                  <span class="top-model"></span>
+                  <div class="nav-icon">
+                     <img src="images/model-b.png" alt="img" class="ico">
+                  </div>
                   Top Models
                </a>
             </li>
-            <li class="popular-vid-li">
+            <li class="popular-vid-li only-fans-li">
                <a href="popularvideos.html">
-                  <span class="popular-vid"></span>
+                  <div class="nav-icon">
+                     <img src="images/vid-b.png" alt="img" class="ico">
+                  </div>
                   Popular Videos
                </a>
             </li>
-            <li class="only-fans-li">
-               <a href="onlyfans-videos.html">
-                  <span class="onlyfans"></span>
-                  OnlyFans Videos
-               </a>
-            </li>
+            <!-- <li class="only-fans-li">
+                 <a href="onlyfans-videos.html">
+                    <span class="onlyfans"></span>
+                    OnlyFans Videos
+                 </a>
+              </li> -->
             <li>
                <a href="video.html">
-                  <span class="video"></span>
-                  Videos
+                  <div class="nav-icon">
+                     <img src="images/video-b.png" alt="img" class="ico">
+                  </div>
+                  HD Videos
                </a>
             </li>
             <li>
                <a href="models.html">
-                  <span class="top-model"></span>
+                  <div class="nav-icon">
+                     <img src="images/model-b.png" alt="img" class="ico">
+                  </div>
                   Models
                </a>
             </li>
-            <li class="popular-vid-li popular-vid-li2">
+            <li class="popular-vid-li only-fans-li">
                <a href="categories.html">
-                  <span class="category-span"></span>
+                  <div class="nav-icon">
+                     <img src="images/cate-b.png" alt="img" class="ico">
+                  </div>
                   Categories
                </a>
             </li>
             <li>
                <a href="blog.html">
-                  <span class="blog-span"></span>
+                  <div class="nav-icon">
+                     <img src="images/blog-b.png" alt="img" class="ico">
+                  </div>
                   Blog
                </a>
             </li>
             <li>
                <a href="blog-model.html">
-                  <span class="top-model"></span>
+                  <div class="nav-icon">
+                     <img src="images/model-b.png" alt="img" class="ico">
+                  </div>
                   Models
                </a>
             </li>
-            <li class="popular-vid-li">
+            <li class="popular-vid-li only-fans-li">
                <a href="blog-categories.html">
-                  <span class="category-span"></span>
+                  <div class="nav-icon">
+                     <img src="images/cate-b.png" alt="img" class="ico">
+                  </div>
                   Categories
                </a>
             </li>
             <li class="contact-li">
                <a href="contact.html">
-                  <span class="contact-span"></span>
+                  <!-- <span class="contact-span"></span> -->
                   Contact / <span class="dmca"> DMCA</span>
                </a>
             </li>
@@ -498,463 +548,1056 @@
       </nav>
    </section>
    <!-- ============= Body =============- -->
-   <section class="body post_timeline_body popular-video-body profile-new video-profile-new">
+   <section class="body profile-new photo-profile video-profile-only">
       <div class="container">
-         <div class="body-wrapper-main">
+         <div class="profile-main-grid">
             <!-- ============= Profile Information =============- -->
             <div class="profile_information">
-               <div class="profile_cover"></div>
+               <!-- <div class="profile_cover"></div> -->
                <div class="bio">
-                  <div class="profile_item">
+                  <div class="slidebar-head profile-head-with-arrow">
+                     <a href="video.html" class="back-button-area">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <h2>
+                           Aidra Fox
+                        </h2>
+                     </a>
+                     <div class="promotion">
+                        <h3>vlixa offer: <a href="">stripchat - free live cam sex</a></h3>
+                     </div>
+                     <!-- <div class="dots">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                     </div>
+                     <div class="share-box">
+                        <div class="link-copy-area">
+                           <div class="link-copy">
+                              <div class="total-link">
+                                 <img src="images/link-icon.png" alt="img">
+                                 <div class="link-text">
+                                    <a href="">
+                                       https://www.google.com/search
+                                    </a>
+                                 </div>
+                              </div>
+                              <button class="copy-btn copy-btn2">
+                                 <img src="images/copy-icon-w.png" alt="">
+                                 <p>
+                                    Copy
+                                 </p>
+                              </button>
+                           </div>
+                        </div>
+                        <ul>
+                           <li>
+                              <a href="https://wa.me/91" class="whatsapp-area">
+                                 <img src="images/whatsapp-g.png" alt="img">
+                                 Whatsapp
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <img src="images/telegram-b.png" alt="img">
+                                 Telegram
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <img src="images/twitter-blue.png" alt="img">
+                                 Twitter
+                              </a>
+                           </li>
+                        </ul>
+                     </div> -->
+                  </div>
+                  <div class="cover-pic-area">
+                     <img src="images/coverphoto1.jpg" alt="img">
+                  </div>
+                  <div class="bio_in">
                      <div class="profile_pic">
                         <a href=""><img src="images/dp.jpg" alt="img" width="127" height="127"></a>
                      </div>
-                     <div class="profile_bio">
-                        <h3>Aidra Fox</h3>
-                        <div class="bio-details"><a href="">250 Posts</a> . <a href="">53.2k Likes</a> . <a href="">89k
-                              Views</a></div>
-                     </div>
-                  </div>
-                  <div class="bio_in">
-                     <h4><a href="" class="big_pro">Esha Chopra</a></h4>
-                     <p>250 High Definition Videos Are Available For You</p>
-                     <!-- <div class="full_description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                           labore et enim ad minim veniam, qstrud exercitationullamco laboris nisi ut aliquip ea commodo
-                           consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor fugiat
-                           nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                           deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                           voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                           inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                           voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                           dolores
-                           eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                           dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-                           ut
-                           labore et dolore magnam aliquam quaerat voluptatem.</p>
+                     <h4>Aidra Fox</h4>
+                     <p>@aidrafox</p>
+                     <!-- <div class="bio-details">
+                        <a href=""><span>250</span> Posts</a> <a href=""><span>53.2k</span> Likes</a> <a
+                           href=""><span>89k</span> Views</a>
                      </div> -->
-                     <!-- <p><a href="" class="showfull_description">+ Show full description</a></p> -->
-                     <div class="social_tag">
-                        <a href="onlyfans-videos.html"><img src="images/socialicon1.png" alt="img" width="27"
-                              height="27"><span>Onlyfans</span></a>
-                        <a href=""><img src="images/socialicon2.png" alt="img" width="27"
-                              height="27"><span>Instagram</span></a>
-                        <a href=""><img src="images/socialicon3.png" alt="img" width="27"
-                              height="27"><span>Twitter</span></a>
+                     <p class="short-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas vitae scel<span id="dots">...</span><button onclick="myFunction()"
+                           id="myBtn" class="view-more">View More</button><span id="more">erisque enim
+                           ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+                           dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
+                           eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+                           pulvinar nibh tempor porta.</span><button onclick="myFunction2()" id="myBtn2"
+                           class="view-more">View Less</button></p>
+
+                     <!-- <p><span class="first-line">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium commodi,
+                           dolore
+                           porro nobis ex similique dicta rem placeat asperiores dolorem nemo enim modi id tempore
+                           dolor,
+                        </span>
+                           <span class="second-line">
+                              impedit suscipit harum!
+                           porro nobis ex similique dicta rem placeat asperiores dolorem nemo enim modi id tempore
+                           dolor,
+                           impedit suscipit harum!
+                           </span> <a href="" class="showfull_description view-all">View More</a></p>
+                        <div class="full_description">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                              ut
+                              labore et enim ad minim veniam, qstrud exercitationullamco laboris nisi ut aliquip ea
+                              commodo
+                              consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor
+                              fugiat
+                              nulla pariatur.</p><a href="" class="showfull_description view-all2">View More</a>
+                        </div> -->
+                     <!-- <p class="full-p"><a href="" class="showfull_description">View More</a></p> -->
+                     <!-- <div class="social_tag">
+                           <a href=""><img src="images/socialicon1.png" alt="img" width="27"
+                                 height="27"><span>Onlyfans</span></a>
+                           <a href=""><img src="images/socialicon2.png" alt="img" width="27"
+                                 height="27"><span>Instagram</span></a>
+                           <a href=""><img src="images/socialicon3.png" alt="img" width="27"
+                                 height="27"><span>Twitter</span></a>
+                        </div> -->
+                     <div class="follow-area">
+                        <ul class="social-icons">
+                           <li>
+                              <a href="">
+                                 <i>
+                                    <img src="images/onlyfans-g.png" alt="">
+                                 </i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <i class="fa-brands fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <i class="fa-brands fa-twitter"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a href="" type="button" class="follow-btn follow-active">
+                           <!-- <img src="images/follow-icon.png" alt=""> -->
+                           <span class="follow">Follow</span>
+                           <span class="followed">Followed</span>
+                        </a>
                      </div>
                   </div>
-                  <!-- <a href="" type="button" class="btn-blue default-btn follow-btn follow-active">Follow</a> -->
+                  <div class="tab-and-filter">
+                     <div class="swiper tabSwiper">
+                        <ul id="tabs-nav" class="swiper-wrapper profile-tab-nav profile-video-tab">
+                           <li class="swiper-slide"><a href="#tab2">Lorem ipsum</a></li>
+                           <li class="swiper-slide"><a href="#tab3">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab4">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab5">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab6">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab7">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab8">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab10">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab11">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab12">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab13">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab14">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab15">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab16">lorem</a></li>
+                           <li class="swiper-slide"><a href="#tab17">lorem</a></li>
+                        </ul>
+                        <div class="swiper-button-next t-arrow t-next"></div>
+                        <div class="swiper-button-prev t-arrow t-prev"></div>
+                        <div class="swiper-pagination"></div>
+                     </div>
+                     <div class="dropdown-container dropdown-container2">
+                        <div class="dropdown-toggle click-dropdown2">
+                           <span>New</span>
+                           <i class="fa-solid fa-sort-down"></i>
+                           <span class="sort">
+                              Sort By
+                           </span>
+                        </div>
+                        <div class="dropdown-menu">
+                           <ul>
+                              <li value="Latest"><a href="#">New</a></li>
+                              <li value="Popular"><a href="#">Popular</a></li>
+                              <li value="Recent"><a href="#">Recent</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
             <!-- ============= Profile Information =============- -->
             <!-- ============= Post Photo Video Section =============- -->
-            <div class="page_tab mbl-show">
-               <ul>
-                  <li><a href="post_timeline.html" class="active">Posts</a></li>
-                  <li><a href="video-details.html">Photos</a></li>
-                  <li><a href="videos.html">Videos</a></li>
-               </ul>
+            <!-- <div class="page_tab mbl-show">
+                  <ul>
+                     <li><a href="post_timeline.html" class="active">Posts</a></li>
+                     <li><a href="photos.html">Photos</a></li>
+                     <li><a href="videos.html">Videos</a></li>
+                  </ul>
+               </div> -->
+            <div class="tabs profile-tab">
+               <div id="tabs-content">
+                  <div id="tab1" class="tab-content-blog">
+                     <section class="blog-model-page only-category-page only-category-inner only-video-profile">
+                        <div class="blog-content">
+                           <!-- <h2>Latest Blog</h2> -->
+                           <div class="custom-row">
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-1.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-2.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-3.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-4.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-5.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-6.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-7.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-8.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-9.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-10.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-11.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-12.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <!-- ============= loader =============- -->
+                           <!-- <div class="item loading-3">
+                              <div class="loader">Loading...</div>
+                              <div class="loading-text">Loading</div>
+                           </div> -->
+                        </div>
+                        <div class="blog-content most-popular-suggestion">
+                           <h2>Maria Smith Most Viewed Video</h2>
+                           <div class="custom-row">
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-1.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-2.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-3.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- ============= pagination =============- -->
+                           <div class="pagination">
+                              <ul>
+                                 <li><a href="">Back</a></li>
+                                 <li><a href="" class="active">1</a></li>
+                                 <li><a href="">2</a></li>
+                                 <li><a href="">3</a></li>
+                                 <li><a href="">4</a></li>
+                                 <li><a href="">5</a></li>
+                                 <li><a href="">Next</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+                  <div id="tab2" class="tab-content-blog only-photo-tab">
+                     <section class="blog-model-page only-category-page only-category-inner only-video-profile">
+                        <div class="blog-content">
+                           <!-- <h2>Latest Blog</h2> -->
+                           <div class="custom-row">
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-1.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-2.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-3.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-4.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-5.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-6.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-7.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-8.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-9.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-10.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-11.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-12.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <!-- ============= loader =============- -->
+                           <!-- <div class="item loading-3">
+                              <div class="loader">Loading...</div>
+                              <div class="loading-text">Loading</div>
+                           </div> -->
+                        </div>
+                        <div class="blog-content most-popular-suggestion">
+                           <h2>Maria Smith Most Viewed Video</h2>
+                           <div class="custom-row">
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-1.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-2.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-3.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- ============= pagination =============- -->
+                           <div class="pagination">
+                              <ul>
+                                 <li><a href="">Back</a></li>
+                                 <li><a href="" class="active">1</a></li>
+                                 <li><a href="">2</a></li>
+                                 <li><a href="">3</a></li>
+                                 <li><a href="">4</a></li>
+                                 <li><a href="">5</a></li>
+                                 <li><a href="">Next</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+                  <div id="tab3" class="tab-content-blog">
+                     <section class="blog-model-page only-category-page only-category-inner only-video-profile">
+                        <div class="blog-content">
+                           <!-- <h2>Latest Blog</h2> -->
+                           <div class="custom-row">
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-1.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-2.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-3.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-4.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-5.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-6.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-7.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-8.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-9.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-10.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-11.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-12.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <!-- ============= loader =============- -->
+                           <!-- <div class="item loading-3">
+                              <div class="loader">Loading...</div>
+                              <div class="loading-text">Loading</div>
+                           </div> -->
+                        </div>
+                        <div class="blog-content most-popular-suggestion">
+                           <h2>Maria Smith Most Viewed Video</h2>
+                           <div class="custom-row">
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-1.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-2.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a><a
+                                                   href="">Pariatur</a></div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid-6 mbl-grid-100">
+                                 <div class="blog_part">
+                                    <a href="video-details.html" class="blog_img">
+                                       <img src="images/blog-3.png" alt="img" width="463" height="266">
+                                       <div class="star_views">
+                                          <div class="star_hover_viewers"><span class="video-length">15:30</span>
+                                          </div>
+                                       </div>
+                                    </a>
+
+                                    <div class="blog_info">
+                                       <!-- <div class="blog_tag"><a href="">Lorem ipsum</a><a href="">Dolor</a><a href="">Pariatur</a>
+                                             </div> -->
+                                       <h3><a href="video-details.html">Lorem ipsum dolor sit amet.</a></h3>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- ============= pagination =============- -->
+                           <div class="pagination">
+                              <ul>
+                                 <li><a href="">Back</a></li>
+                                 <li><a href="" class="active">1</a></li>
+                                 <li><a href="">2</a></li>
+                                 <li><a href="">3</a></li>
+                                 <li><a href="">4</a></li>
+                                 <li><a href="">5</a></li>
+                                 <li><a href="">Next</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div> <!-- END tabs-content -->
             </div>
-            <div class="body_wrapper post-photo-area">
-               <div class="custom-row">
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <!-- =====Click Openpopup===== -->
-                        <img src="images/post-yellow.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <!-- =====Click Openpopup===== -->
-                        <img src="images/videoimg9.jpg" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <!-- =====Click Openpopup===== -->
-                        <img src="images/post-flower.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-black-dress.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-shirt.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-baby-cut.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-white-top.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-glass.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-curl.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-china.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-sofa.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="grid-4 mbl-grid-50">
-                     <a href="video-details.html" class="port_img">
-                        <img src="images/post-rainbow-girl.png" alt="img" width="306" height="250" class="post-content">
-                        <div class="playvideo"><img src="images/playicon.png" alt="img" width="47" height="47"></div>
-                        <div class="star_views">
-                           <div class="star_dp"><img src="images/profileimg12.png" width="28"
-                                 height="27"><span>Darcy</span></div>
-                           <div class="star_hover_viewers"><span class="video-length">15:30</span></div>
-                        </div>
-                     </a>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="item loading-3">
-                     <div class="loader">Loading...</div>
-                     <div class="loading-text">
-                        <p>
-                           Loading
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- ============= Post Photo Video Section =============- -->
          </div>
+         <!-- ============= Post Photo Video Section =============- -->
+      </div>
       </div>
    </section>
-   <!-- ============= Modal Show =============- -->
-   <div id="popup1" class="custom_modal">
-      <div class="modal_content">
-         <div class="modal_head">
-            <div class="modal_like">
-               <a href=""><i class="fa-solid fa-heart"></i>53.2k <span>Likes</span></a><a href=""><i
-                     class="fa-solid fa-eye"></i>89k <span>Views</span></a>
-            </div>
-            <div><a href="" class="close_modal"><span>close</span><i class="fa-light fa-xmark"></i></a></div>
-         </div>
-         <div class="modal_body">
-            <div><img src="images/googleads.jpg" alt="img" width="728" height="90" class="g_img"></div>
-            <div class="pop_profile">
-               <div><a href=""><img src="images/profileimg13.png" alt="img" width="30" height="30"></a> </div>
-               <div><a href="">Sophia Neuro</a></div>
-            </div>
-            <!--=============- Popup Slider =============--->
-            <div class="popup_slider">
-               <!--=============- Slider1 =============--->
-               <div class="pop_slide_item">
-                  <div class="port_img">
-                     <video width="320" height="240" controls>
-                        <source src="videos/mov_bbb.mp4" type="video/mp4">
-                     </video>
-                  </div>
-               </div>
-               <!--=============- Slider1 =============--->
-               <!--=============- Slider2 =============--->
-               <div class="pop_slide_item">
-                  <div class="port_img">
-                     <video width="320" height="240" controls>
-                        <source src="videos/mov_bbb.mp4" type="video/mp4">
-                     </video>
-                  </div>
-               </div>
-               <!--=============- Slider2 =============--->
-            </div>
-            <!--=============- Popup Slider =============--->
-            <!--=============- Do Like comments and Share =============--->
-            <div class="like_comment_view">
-               <div><a href="" class="change_icon open_comments_modal"><i class="fa-light fa-message"></i> <i
-                        class="fa-solid fa-message on-icon"></i>48k Comments</a></div>
-               <div><a href="" class="change_icon"><i class="fa-light fa-share"></i>5 Share</a></div>
-            </div>
-            <!--=============- Do Like comments and Share =============--->
-            <div class="comment_sec_modal">
-               <!--============ Show comments =============-->
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <!--=============- Show comments =============--->
-            </div>
-            <!--=============- Write comments =============--->
-            <div class="comment_form">
-               <form>
-                  <input type="text" placeholder="Type a message here ...">
-                  <button type="submit" class="btn-light">Post</button>
-               </form>
-            </div>
-            <!--=============- Write comments =============--->
-         </div>
-      </div>
-   </div>
-   <!-- ============= Modal Show =============- -->
-   <!-- ============= Modal Show =============- -->
-   <div id="popup2" class="custom_modal">
-      <div class="modal_content">
-         <div class="modal_head">
-            <div class="modal_like">
-               <a href=""><i class="fa-solid fa-heart"></i>53.2k <span>Likes</span></a><a href=""><i
-                     class="fa-solid fa-eye"></i>89k <span>Views</span></a>
-            </div>
-            <div><a href="" class="close_modal"><span>close</span><i class="fa-light fa-xmark"></i></a></div>
-         </div>
-         <div class="modal_body">
-            <div><img src="images/googleads.jpg" alt="img" width="728" height="90" class="g_img"></div>
-            <div class="pop_profile">
-               <div><a href=""><img src="images/profileimg13.png" alt="img" width="30" height="30"></a> </div>
-               <div><a href="">Sophia Neuro</a></div>
-            </div>
-            <!--=============- Popup Slider =============--->
-            <div class="popup_slider">
-               <!--=============- Slider1 =============--->
-               <div class="pop_slide_item">
-                  <div class="port_img">
-                     <video width="320" height="240" controls>
-                        <source src="videos/mov_bbb.mp4" type="video/mp4">
-                     </video>
-                  </div>
-               </div>
-               <!--=============- Slider1 =============--->
-               <!--=============- Slider2 =============--->
-               <div class="pop_slide_item">
-                  <div class="port_img">
-                     <video width="320" height="240" controls>
-                        <source src="videos/mov_bbb.mp4" type="video/mp4">
-                     </video>
-                  </div>
-               </div>
-               <!--=============- Slider2 =============--->
-            </div>
-            <!--=============- Popup Slider =============--->
-            <!--=============- Do Like comments and Share =============--->
-            <div class="like_comment_view">
-               <div><a href="" class="change_icon open_comments_modal"><i class="fa-light fa-message"></i> <i
-                        class="fa-solid fa-message on-icon"></i>48k Comments</a></div>
-               <div><a href="" class="change_icon"><i class="fa-light fa-share"></i>5 Share</a></div>
-            </div>
-            <!--=============- Do Like comments and Share =============--->
-            <div class="comment_sec_modal">
-               <!--============ Show comments =============-->
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <!--=============- Show comments =============--->
-            </div>
-            <!--=============- Write comments =============--->
-            <div class="comment_form">
-               <form>
-                  <input type="text" placeholder="Type a message here ...">
-                  <button type="submit" class="btn-light">Post</button>
-               </form>
-            </div>
-            <!--=============- Write comments =============--->
-         </div>
-      </div>
-   </div>
-   <!-- ============= Modal Show =============- -->
-   <!-- ============= Modal Show =============- -->
-   <div id="popup3" class="custom_modal">
-      <div class="modal_content">
-         <div class="modal_head">
-            <div class="modal_like">
-               <a href=""><i class="fa-solid fa-heart"></i>53.2k <span>Likes</span></a><a href=""><i
-                     class="fa-solid fa-eye"></i>89k <span>Views</span></a>
-            </div>
-            <div><a href="" class="close_modal"><span>close</span><i class="fa-light fa-xmark"></i></a></div>
-         </div>
-         <div class="modal_body">
-            <div><img src="images/googleads.jpg" alt="img" width="728" height="90" class="g_img"></div>
-            <div class="pop_profile">
-               <div><a href=""><img src="images/profileimg13.png" alt="img" width="30" height="30"></a> </div>
-               <div><a href="">Sophia Neuro</a></div>
-            </div>
-            <!--=============- Popup Slider =============--->
-            <div class="popup_slider">
-               <!--=============- Slider1 =============--->
-               <div class="pop_slide_item">
-                  <div class="port_img">
-                     <img src="images/img56.jpg" alt="img" width="724" height="557">
-                  </div>
-               </div>
-               <!--=============- Slider1 =============--->
-               <!--=============- Slider2 =============--->
-               <div class="pop_slide_item">
-                  <div class="port_img">
-                     <img src="images/img56.jpg" alt="img" width="724" height="557">
-                  </div>
-               </div>
-               <!--=============- Slider2 =============--->
-            </div>
-            <!--=============- Popup Slider =============--->
-            <!--=============- Do Like comments and Share =============--->
-            <div class="like_comment_view">
-               <div><a href="" class="change_icon open_comments_modal"><i class="fa-light fa-message"></i> <i
-                        class="fa-solid fa-message on-icon"></i>48k Comments</a></div>
-               <div><a href="" class="change_icon"><i class="fa-light fa-share"></i>5 Share</a></div>
-            </div>
-            <!--=============- Do Like comments and Share =============--->
-            <div class="comment_sec_modal">
-               <!--============ Show comments =============-->
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <div class="view_comments">
-                  <img src="images/profileimg2.png" width="42" height="42" alt="img" class="pro_img">
-                  <div class="pro_info"><strong>Anita Michaels</strong> Lorem ipsum dolor</div>
-                  <div class="pro_like"><a href="#" class="inner_change_icon"><i class="fa-light fa-heart"></i> <i
-                           class="fa-solid fa-heart on-icon"></i></a>1 Like. 2 days ago . <a href="">Reply</a></div>
-               </div>
-               <!--=============- Show comments =============--->
-            </div>
-            <!--=============- Write comments =============--->
-            <div class="comment_form">
-               <form>
-                  <input type="text" placeholder="Type a message here ...">
-                  <button type="submit" class="btn-light">Post</button>
-               </form>
-            </div>
-            <!--=============- Write comments =============--->
-         </div>
-      </div>
-   </div>
-   <!-- ============= Modal Show =============- -->
    <!-- ============= Body =============- -->
    <!-- ============= Custom jquery =============- -->
+   <script src="swiper/swiper-bundle.min.js"></script>
+   <script src="js/swiper-edited.js"></script>
    <script src="js/edit-js.js"></script>
-   <script src="js/slick.js"></script>
 </body>
 
 </html>
